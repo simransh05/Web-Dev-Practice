@@ -1,0 +1,48 @@
+/* static position */
+div{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+}
+
+#static > #middle{
+    position: static;
+    top: 100px;
+    left: 100px;
+}
+
+/* relative */
+#relative > #middle{
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+
+/* Absolute */
+#absolute > #middle{
+    position: absolute;
+    left: 100px;
+    top: 20px;
+}
+
+#absolute{
+    position: relative;
+}
+
+/* fixed */
+
+#fixed > #middle{
+    position: fixed;
+    bottom: 10px;
+}
+
+/* sticky */
+
+#sticky{
+    height: 500px;
+}
+
+#sticky > #middle{
+    position: sticky;
+    top: 100px;
+}

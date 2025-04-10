@@ -1,0 +1,24 @@
+.child{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    transition-duration: 3s;
+}
+
+.parent:hover .child{
+    width: 100%;
+}
+
+/* Transition time function */
+.child1{
+    transition-timing-function: linear;
+}
+.child2{
+    transition-timing-function: ease-in;
+}
+.child3{
+    transition-timing-function: ease-out;
+}
+.child4{
+    transition-timing-function: ease-in-out;
+}

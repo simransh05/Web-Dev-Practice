@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#box{
+    height: 75px;
+    width: 75px;
+    border-top:10px solid red;
+    border-right:10px solid green;
+    border-bottom:10px solid black;
+    border-left:10px solid blue;
+    border-radius: 50%;
+}
+
+#container:hover{
+    animation-name: bouncer;
+    animation-iteration-count: 5;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+@keyframes bouncer{
+    0%{
+        transform: translateY(0px) rotate(0deg);
+    }50%{
+        transform: translateY(250px) rotate(180deg);
+    }100%{
+        transform: translateY(0px) rotate(360deg);
+    }
+}

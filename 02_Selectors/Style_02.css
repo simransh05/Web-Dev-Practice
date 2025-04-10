@@ -1,0 +1,36 @@
+/* Basic Selectors */
+
+/* Element Selector */
+
+h1{
+    color: red;
+    font-size: 100px;
+}
+
+/* ID Selectors */
+#View{
+    color: blue;
+    font-size: 50px;
+}
+
+/* Class Selector */
+
+.Simran{
+    color: purple;
+    font-size: 70px;
+}
+
+/* Attribute Selector */
+input[type="password"]{
+    background-color: green;
+}
+
+a[href="https://www.codingblocks.com/"]{
+    color: brown;
+}
+
+/* Universal Selector */
+
+*{
+    border: 2px solid black ;
+}

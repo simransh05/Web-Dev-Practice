@@ -1,0 +1,36 @@
+/* absolute units */
+/* px */
+
+h1{
+    font-size: 100px;
+}
+
+/* relative units */
+/* percentage */
+section{
+    width: 100px;
+}
+
+div{
+    width: 100%;
+    background-color: sandybrown;
+}
+
+/* rem --> root*/
+p{
+    font-size: 2rem;
+}
+
+/* em --> snow boll effect*/
+
+ul>li{
+    font-size: 2em;
+}
+
+/* vh --> view height vw --> view width */
+
+section{
+    height: 50vh;
+    width: 50vw;
+    background-color: blue;
+}

@@ -1,0 +1,15 @@
+/* RGB RED GREEN BLUE */
+p{
+    color: rgb(255, 128, 79);
+}
+
+/* RGBA RED GREEN BLUE ALPHA */
+/* alpha -> 0 to 1 */
+h1{
+    color: rgba(200, 250, 255, 1);
+}
+
+/* hexadecimal 0 - 15  first 2 letter of red  using #*/
+div{
+    color: #ff00aa;
+}

@@ -1,0 +1,83 @@
+/* Combinators */
+/* Descendent Selectors */
+
+h1 span{
+    color: red;
+}
+
+/* section div h1 span{}
+section h1 span{} */
+
+/* child selectors */
+
+h1>span{
+    background-color: green;
+}
+
+/* Adjacent Sibling */
+
+/* article + div{
+    border: 2px solid black;
+} */
+
+/* General Sibling */
+
+article ~ div{
+    background-color: greenyellow;
+}
+
+/* Pseudo Classes */
+
+/* Hover */
+div{
+    background-color: yellow;
+}
+
+div:hover{
+    background-color: red;
+}
+
+/* Focus */
+input{
+    background-color: greenyellow;
+}
+input:focus{
+    background-color: rebeccapurple;
+}
+
+/*  Active class */
+a{
+    font: 20px;
+}
+
+/* a:active{
+    font: 50px;
+    border: 2px dotted green;
+} */
+
+/* Visited class */
+/* a:visited{
+    color: green;
+} */
+
+/* Pseudo Elements */
+/* first-letter */
+/* p::first-letter{
+    font-size: 100px;
+    color: rebeccapurple;
+}
+    /* First line */
+/* p::first-line{
+     font-family: cursive;
+}  */
+
+/* before */
+p::before{
+    content: "hello ";
+}
+
+/* after */
+
+p::after{
+    content: " bye";
+}
