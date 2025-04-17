@@ -27,7 +27,7 @@
 //     return n*n*n;
 // }
 
-// or
+// or only one argument and one statement in between 
 const cube = n => n * n * n;
 
 console.log(cube(3))
