@@ -1,0 +1,12 @@
+{
+  "name": "write_promise",
+  "version": "1.0.0",
+  "main": "WriteFile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

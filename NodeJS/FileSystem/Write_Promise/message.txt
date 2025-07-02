@@ -1,0 +1,1 @@
+write file using promise and async await function 
