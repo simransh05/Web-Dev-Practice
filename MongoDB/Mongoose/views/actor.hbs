@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  {{> navbar}}
+
+<div class="header">
+  <h1 class="actorsHeading">Actors - Details</h1>
+
+  <form class="actorsForm" action="/actor" method="POST">
+    <div class="nameBox">
+      <span class="nameText">Name:</span>
+      <input name="name" placeholder="Enter Name" required />
+    </div>
+
+    <div class="actorBox">
+      <span class="actorImage">Image:</span>
+      <input name="actorurl" placeholder="Enter Actor's Image Url" required />
+    </div>
+
+    <div class="ageBox">
+      <span class="ageText">Age:</span>
+      <input name="age" placeholder="Enter Actor Age" required />
+    </div>
+
+    <button type="submit">Add Actor</button>
+  </form>
+</div>
+
+<ul class="actorsList">
+  {{#each actors}}
+    <li class="actorItem">
+      <div class="actorActor">
+        <img src="{{this.imageurl}}" alt="actor-image" width="150" />
+      </div>
+      <div class="actorTitle">
+        <span class="actorTitleHeading">Name:</span>
+        <span class="actorTitleText">{{this.name}}</span>
+      </div>
+      <div class="actorAge">
+        <span class="actorAgeHeading">Age:</span>
+        <span class="actorAgeText">{{this.age}}</span>
+      </div>
+      <div class="actorActions">
+        <a href="/delete/actor?id={{this._id}}">Delete</a>
+        <a href="/update/actor?id={{this._id}}">Update</a>
+      </div>
+    </li>
+  {{/each}}
+</ul>
+</body>
+</html>

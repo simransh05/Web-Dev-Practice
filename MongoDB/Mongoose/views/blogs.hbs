@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  {{> navbar}}
+<div class="container">
+  <h1 class="heading">Blog Site</h1>
+  <form class="form" action="/blogs" method="POST">
+    <label>Title:</label>
+    <input type="text" name="title" placeholder="Enter Title">
+
+    <label>Actor:</label>
+    <select name="actor">
+      {{#each actor}}
+        <option value="{{this._id}}">{{this.name}}</option>
+      {{/each}}
+    </select>
+
+    <label>Description:</label>
+    <textarea name="description" rows="4" placeholder="Enter description"></textarea>
+
+    <button type="submit">Add Blog</button>
+  </form>
+
+  <ul class="list">
+    {{#each blogs}}
+      <li class="item">
+        <h3>{{this.title}}</h3>
+        <p><strong>Actor:</strong> {{this.actor.name}}</p>
+        <p><strong>Description:</strong> {{this.description}}</p>
+        <a href="/details?id={{this._id}}">Details</a>
+        <a href="/update?id={{this._id}}">Update</a>
+        <a href="/delete?id={{this._id}}">Delete</a>
+      </li>
+    {{/each}}
+  </ul>
+</div>
+</body>
+</html>
