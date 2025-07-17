@@ -1,0 +1,8 @@
+li:first-child button.up, li:last-child button.down{
+    visibility: hidden;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+}
