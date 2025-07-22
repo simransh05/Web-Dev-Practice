@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="signupstyle.css" />
+</head>
+<body>
+    {{#if msg}}
+        <div>{{msg}}</div>
+    {{/if}}
+  <div class="signup">
+    <div class="signupItem navItem1"></div>
+
+    <div class="signupItem">
+      <div class="signupOptions">
+        <h2 class="signupHeading">Sign Up</h2>
+        <hr class="horizontalRule"/>
+
+        <form class="signupForm" action="/signup" method="POST">
+          <div class="signupCreds">
+            <input class="signupName" type="text" name="username" placeholder="Username" required />
+            <input class="signupPassword" type="password" name="password" placeholder="Password" required />
+            <button class="signupBtn" type="submit">Create Account</button>
+          </div>
+        </form>
+
+        <div class="loginDetails">
+          <p>Already have an account?</p>
+          <button class="loginBtn">
+            <a href="/login">Login</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

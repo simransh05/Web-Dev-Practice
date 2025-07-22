@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.profileHeading,
+.signupHeading,
+.loginHeading {
+  color: rgb(68, 68, 156);
+}
+
+.login {
+  display: flex;
+  width: 800px;
+  margin: 200px auto;
+  align-items: center;
+}
+
+.loginItem {
+  width: 50%;
+}
+
+.navItem1 {
+  background-image: url('https://media.istockphoto.com/id/1184670036/vector/shopping-cart-flat-design.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.navItem1,
+.navItem2 {
+  height: 300px;
+}
+
+.loginOptions {
+  border: 1px solid #ccc;
+  width: 100%;
+  align-content: space-around;
+  padding: 30px;
+  box-shadow: 3px 3px 10px black;
+}
+
+.loginForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginCreds {
+  width: 300px;
+}
+
+.loginUsername,
+.loginPassword,
+.loginBtn,
+.signupBtn {
+  font-size: 24px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.loginBtn {
+  margin-bottom: 20px;
+}
+
+.signupBtn {
+  border: 0px;
+  color: white;
+  width: 70%;
+  margin-top: 20px;
+}
+
+.signupBtn a:link,
+.signupBtn a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.signupDetails {
+  display: flex;
+  justify-content: center;
+}
+
+.signup {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.horizonta1Rule {
+  margin: 10px 0;
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.navItem2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginUsername,
+.loginPassword {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.loginBtn {
+  width: 100%;
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.loginBtn:hover {
+  background-color: #303f9f;
+}
+
+.signupBtn {
+  background-color: #f50057;
+  cursor: pointer;
+}
+
+.signupBtn:hover {
+  background-color: #c51162;
+}

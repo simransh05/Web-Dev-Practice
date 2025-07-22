@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.signupHeading {
+  color: rgb(68, 68, 156);
+}
+
+.signup {
+  display: flex;
+  width: 800px;
+  margin: 200px auto;
+  align-items: center;
+}
+
+.signupItem {
+  width: 50%;
+}
+
+.navItem1 {
+  background-image: url('https://media.istockphoto.com/id/1184670036/vector/shopping-cart-flat-design.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.navItem1 {
+  height: 300px;
+}
+
+.signupOptions {
+  border: 1px solid #ccc;
+  width: 100%;
+  align-content: space-around;
+  padding: 30px;
+  box-shadow: 3px 3px 10px black;
+}
+
+.signupForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signupCreds {
+  width: 300px;
+}
+
+.signupName,
+.signupPassword,
+.signupBtn,
+.loginBtn {
+  font-size: 24px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.signupName,
+.signupPassword {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.signupBtn {
+  width: 100%;
+  background-color: #f50057;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.signupBtn:hover {
+  background-color: #c51162;
+}
+
+.loginDetails {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginBtn {
+  background-color: #3f51b5;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-top: 10px;
+}
+
+.loginBtn a:link,
+.loginBtn a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.horizontalRule {
+  margin: 10px 0;
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+}
