@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/styles/addProduct.css">
+</head>
+
+<body>
+    {{>navbar isAdmin=isAdmin cartCount=cartCount}}
+
+    <div class="container">
+        <form action="/admin/add-product" method="POST">
+            <div class="productBox">
+
+                <div class="productBoxItem">
+                    <label class="title" for="name">Name:</label>
+                    <input class="inputElement" type="text" placeholder="Enter Name" id="name" name="name">
+                </div>
+
+                <div class="productBoxItem">
+                    <label class="title" for="price">Price:</label>
+                    <input class="inputElement" type="text" placeholder="Enter Price" id="price" name="price">
+                </div>
+
+                <div class="productBoxItem">
+                    <label class="title" for="img">Image Url:</label>
+                    <input class="inputElement" type="text" placeholder="Enter Image URL" id="img" name="imageUrl">
+                </div>
+                <div class="productBoxItem">
+                    <label class="title" for="description">Description:</label>
+                    <div class="descriptionBox inputElement">
+                        <input type="text" id="descriptionInp" placeholder="Enter the new Description">
+                        <button class="descriptionBtn">Add</button>
+                    </div>
+
+                    <div class="descriptionList inputElement">
+                    </div>
+
+                    <div class="productBtn">
+                        <button type="submit">Add Product</button>
+                    </div>
+                </div>
+
+                <button class="logoutBtn">
+                    <a href="/logout">Logout</a>
+                </button>
+
+
+            </div>
+        </form>
+    </div>
+    <Script>
+        let descriptionBtn = document.querySelector('.descriptionBtn');
+        let descriptionInp = document.querySelector('#descriptionInp');
+        let descriptionList = document.querySelector('.descriptionList');
+
+        descriptionBtn.addEventListener('click', (Ev) => {
+            Ev.preventDefault();
+            let v = descriptionInp.value;
+            descriptionInp.value='';
+            if(!v) return;
+            let textarea = document.createElement('textarea');
+            textarea.classList.add('inputElement');
+            textarea.classList.add('description');
+            textarea.setAttribute('name','description');
+            textarea.value = v;
+            descriptionList.appendChild(textarea);
+        })
+
+    </Script>
+</body>
+
+</html>

@@ -1,0 +1,214 @@
+.productDetails {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px;
+}
+
+.productItem {
+    display: flex;
+    border-bottom: 1px solid black;
+    margin: 10px 0;
+    padding-bottom: 20px;
+    padding: 15px;
+    align-items: center;
+    background-color: white;
+}
+.productItem:last-child {
+    border-bottom: none;
+}
+
+.image {
+    height: 150px;
+    width: 30%;
+    /* width: 150px; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.info {
+    flex-grow: 3;
+    width: 70%;
+}
+
+.info h2 {
+    margin: 0 0 10px 0;
+    font-size: 24px;
+}
+
+.descriptionList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.priceInfo {
+    flex-grow: 1;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.btnGroup {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-end;
+}
+
+.btnGroup button {
+    background-color: #2d0b4b;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+
+.btnGroup button a {
+    color: white;
+    text-decoration: none;
+}
+
+.btnGroup button:hover {
+    background-color: #3e1f68;
+    cursor: pointer;
+}
+
+.productInfoLink:visited,
+.productInfoLink:link,
+.productInfoLink{
+    text-decoration: none;
+    color: black;
+}
+
+.productInfoLink:hover .name{
+    color: blue;
+}
+
+.impDetails{
+    /* border: 1px solid black; */
+    padding-top: 10px;
+}
+
+.payments{
+    width: 25%;
+    /* border: 1px solid hsl(0, 100%, 50%); */
+    float: left;
+    display: flex;
+    justify-content: space-around;
+}
+
+.reviews{
+    width: 70%;
+    /* border: 1px solid red; */
+    float: right;
+}
+
+.addtocartBTN,
+.buynowBTN{
+    width: 40%;
+    padding: 5px;
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+    border: 0px;
+    cursor: pointer;
+}
+
+.writeReview,
+.submitReview,
+.deleteReview{
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+    border: 0px;
+    cursor: pointer;
+    background-color: aqua;
+    margin: 5px;
+}
+
+.deleteReview{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: aqua;
+}
+
+.deleteReview a{
+    text-decoration: none;
+    color: white;
+}
+.deleteReview a:link,
+.deleteReview a:visited{ 
+    text-decoration: none;
+    color: white;
+}
+
+.deleteReview a:hover{
+    cursor: pointer;
+}
+.addtocartBTN{
+    background-color: orange;
+}
+.buynowBTN{
+    background-color: green;
+}
+
+.hide{
+    display: none;
+}
+.writeReview{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.title,
+.description{
+    font-size: 20px;
+    padding: 4px;
+    width: 40%;
+    margin: 5px;
+}
+
+.reviewListItem{
+    font-size: 24px;
+    padding: 4px;
+    border-bottom: 1px solid black;
+    margin : 5px 0;
+    /* box-shadow: 3px 3px 10px black; */
+    width: 80%;
+    list-style: none;
+    position: relative;
+}
+
+.reviewTitle{
+    font-size: 20px;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.reviewDescription{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.cartName {
+    position: relative;
+}
+
+.cartCount {
+    position: absolute;
+    top: -9px;
+    right: -9px;
+    font-size: 12px;
+    padding: 2px;
+    font-weight: 800;
+    background-color: rgb(94, 94, 248);
+}

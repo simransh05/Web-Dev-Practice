@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    display: flex;
+    /* border:1px solid black; */
+    justify-content: space-around;
+    background-color: blue;
+    color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+
+.navItem{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+
+.navItem input{
+    font-size: 24px;
+    width: 100%;
+    padding: 5px;
+}
+
+.navLink{
+    margin: 0 10px;
+    font-size: 20px;
+
+}
+.navLink:visited,
+.navLink:link{
+    color: white;
+    text-decoration: none;
+}
+
+.container{
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 80%;
+    /* border: 1px solid black; */
+}
+
+
+.logoutBtn{
+    position: fixed;
+    top: 30px;
+    right: 10px;
+    color: white;
+    padding: 5px;
+}
+
+.logoutBtn a{
+    text-decoration: none;
+}

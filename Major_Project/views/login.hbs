@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="loginstyle.css">
+</head>
+
+<body>
+  {{#if msg}}
+  <div>{{msg}}</div>
+  {{/if}}
+  <div class="login">
+    <div class="loginItem navItem1">
+      <!-- Background image set by CSS -->
+    </div>
+    <div class="loginItem navItem2">
+      <div class="loginOptions">
+        <form class="loginForm" action="/login" method="POST">
+          <div class="loginCreds">
+            <input class="loginUsername" type="text" name="username" placeholder="Enter Username" required />
+            <input class="loginPassword" type="text" name="password" placeholder="Enter Password" required />
+            <button class="loginBtn" type="submit">Login</button>
+          </div>
+        </form>
+        <div class="signup">
+          <hr class="horizonta1Rule" />
+          <div class="signupDetails">
+            <button class="signupBtn">
+              <a href="/signup">Signup</a>
+            </button>
+          </div>
+          {{!-- <div class="signupDetails">
+            <button class="signupBtn">
+              <a href="/login/facebook">FB-Login</a>
+            </button>
+          </div> --}}
+          <div class="signupDetails">
+            <button class="signupBtn">
+              <a href="/login/google">google-login</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

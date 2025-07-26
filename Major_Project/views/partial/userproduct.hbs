@@ -1,0 +1,22 @@
+{{#each products as |product|}}
+<div class="productItem">
+    <div class="image" style="background-image: url({{product.imageUrl}})"></div>
+    <div class="info">
+        <a class="productInfoLink" href="/shop/details" target="_blank">
+            <h2>
+                {{product.name}}
+            </h2>
+            <ul class="descriptionList">
+                {{#each product.description as |desc|}}
+                <li>{{desc}}</li>
+                {{/each}}
+            </ul>
+    </div>
+    </a>
+    <div class="priceInfo">
+        <div>
+            $ {{product.price}}
+        </div>
+    </div>
+</div>
+{{/each}}
