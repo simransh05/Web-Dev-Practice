@@ -34,3 +34,4 @@
 /TypeScript2/node_modules
 /PostgreSQL/node_modules
 /PostgreSQL/.env
+/Prisma/node_modules
