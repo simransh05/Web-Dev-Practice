@@ -1,5 +1,5 @@
 // 1
-import { PrismaClient } from "../generated/prisma";
+import { PrismaClient } from '@prisma/client';
 import { withAccelerate } from "@prisma/extension-accelerate";
 
 // 2
