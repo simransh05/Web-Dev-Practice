@@ -35,3 +35,5 @@
 /PostgreSQL/node_modules
 /PostgreSQL/.env
 /Prisma/node_modules
+/React/csr/node_modules
+/React/ssr/node_modules
