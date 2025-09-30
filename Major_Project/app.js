@@ -25,6 +25,10 @@ app.use(flash());
 app.use(passport.initialize());
 app.use(passport.session());
 
+app.get('/', (req, res) => {
+    res.redirect('/login');
+});
+
 app.use('/login', require('./routes/login'))
 app.use('/signup', require('./routes/signup'))
 app.use('/profile', require('./routes/profile'))
@@ -34,9 +38,6 @@ const {isAdmin} = require('./middleware/isAdmin')
 app.use('/admin',isAdmin, require('./routes/admin'))
 
 app.use('/shop', require('./routes/shop'))
-app.get('/', (req, res) => {
-    res.redirect('/login');
-});
 
 app.get('/login/google',
     passport.authenticate('google', { scope: ['profile'] })
