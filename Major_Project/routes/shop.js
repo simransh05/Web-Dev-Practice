@@ -12,8 +12,8 @@ routes.get('/',controller.getProducts);
 routes.post('/submitReview',controller.postSubmitReview);
 routes.get('/addtocart',controller.getAddToCart);
 routes.get('/cart',controller.getCart);
-routes.get('/increseQty',controller.getIncreseQty);
-routes.get('/decreaseQty',controller.getDecreseQty);
+routes.get('/increseQty',controller.getIncreaseQty);
+routes.get('/decreaseQty',controller.getDecreaseQty);
 routes.get('/deletecartitem',controller.getDeleteCartItem);
 
 
